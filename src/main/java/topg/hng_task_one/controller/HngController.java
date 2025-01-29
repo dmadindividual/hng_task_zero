@@ -20,7 +20,7 @@ public class HngController {
         Map<String, String> response = new HashMap<>();
      
        
-        response.put("github_url", "https://github.com/dmadindividual/hng_task_zero.git");
+        response.put("github_url", "https://github.com/dmadindividual/hng_task_zero");
  response.put("current_datetime", DateTimeFormatter.ISO_DATE_TIME.withZone(ZoneOffset.UTC).format(Instant.now()));
            response.put("email", "ayomidefalade@gmail.com"); 
         return response;
