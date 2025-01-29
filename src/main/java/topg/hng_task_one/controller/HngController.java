@@ -21,7 +21,7 @@ public class HngController {
      
        
         response.put("github_url", "https://github.com/dmadindividual/hng_task_zero.git");
-         response.put("current_datetime", DateTimeFormatter.ISO_INSTANT.format(Instant.now()));
+ response.put("current_datetime", DateTimeFormatter.ISO_DATE_TIME.withZone(ZoneOffset.UTC).format(Instant.now()));
            response.put("email", "ayomidefalade@gmail.com"); 
         return response;
     }
